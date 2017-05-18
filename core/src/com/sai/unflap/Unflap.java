@@ -59,11 +59,11 @@ public class Unflap extends ApplicationAdapter {
 		birdCircle = new Circle();
 		font = new BitmapFont();
 		font.setColor(Color.WHITE);
-		font.getData().setScale(6);
+		font.getData().setScale(5);
 
 		font2 = new BitmapFont();
 		font2.setColor(Color.WHITE);
-		font2.getData().setScale(8);
+		font2.getData().setScale(5);
 
 		background = new Texture("background2.png");
 		birds = new Texture[2];
@@ -216,7 +216,8 @@ public class Unflap extends ApplicationAdapter {
 		if(high_score<score){
 			high_score = score;
 		}
-		font2.draw(batch,String.valueOf(high_score),100,1700);
+
+		font2.draw(batch,String.valueOf(high_score),100,1150);
 
 		birdCircle.set(Gdx.graphics.getWidth()/2,birdY + birds[flag].getHeight()/2,birds[flag].getHeight()/2);
 
